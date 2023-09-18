@@ -1,0 +1,231 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.7rem;
+    font-family: 'popins', sans-serif;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/003/641/130/original/colorful-pink-blurred-backgrounds-valentine-s-day-pink-background-abstract-gradient-light-pink-illustration-free-vector.jpg');
+    color: palevioletred;
+    padding: 4rem;
+}
+
+header {
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Added relative positioning */
+    z-index: 999;
+}
+
+header .logo img {
+    max-width: 80px; /* Adjust the logo size as needed */
+}
+
+header nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Align navigation to the right */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s; /* Smooth text color transition on hover */
+}
+
+header nav ul li a:hover {
+    color: palevioletred;
+}
+
+.bestseller {
+    text-align: left;
+    margin: 1px 0;
+    padding-top: 100px; /* Added padding-top to create space */
+}
+.bestseller-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(128, 0, 128, 0.65)), url('https://pbs.twimg.com/media/FZ2Ez27aUAAQRmH.jpg:large');
+    background-size: cover; /* Ensure the background image covers the container */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center; /* Center the background image */
+    border-radius: 10px;
+}
+
+.bestseller-text {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    color: lightpink; /* Set the text color to light pink */
+}
+
+.bestseller-text h2 {
+    font-size: 50px;
+    text-align: left;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.bestseller-text p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.product-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6f61; /* Coral pink color */
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+.product-btn:hover {
+    background-color: #ff4757; /* Darker coral pink on hover */
+}
+
+.bestseller-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+}
+
+.all-products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product{
+    overflow: hidden;
+    background: #ffffff;
+    color: #21201e;
+    text-align: center;
+    width: 240px;
+    height: 400px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    margin: 2rem;
+}
+
+.product .product-title, .product .product-price{
+    font-size: 18px;
+}
+
+.product:hover img{
+    scale:  1.1;
+}
+.product:hover {
+    box-shadow: 5px 15px 25px rgba(128, 0, 128, 0.7); /* Purple shadow with 70% opacity */
+}
+
+.product img {
+    height: 200px;
+    margin: 1rem;
+    transition: all 0.3s;
+}
+
+.product a:link, .product a:visited{
+    color: #ececec;
+    display: inline-block;
+    text-decoration: none;
+    background-color: mediumpurple;
+    padding: 1.2rem 3rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.product a:hover{
+    transform: scale(1.1);
+}
+
+.contact-us{
+	background: #F8F8F8;
+	width: 1000px;
+	height: 650px;
+	margin: auto;
+	box-shadow: 0px 0px 10px purple;
+}
+.map{
+	width: 47%;
+	float: left;
+}
+.contact-form{
+	width: 50%;
+	margin-left: 18px;
+	float: left;
+}
+.title{
+	font-size: 2.5em;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #242424;
+	margin: 5% 8%;
+}
+.subtitle{
+	font-size: 1.2em;
+	font-weight: lighter;
+	margin: 5% 8%;
+}
+input, textarea{
+	width: 330px;
+	padding: 3%;
+	margin: 2% 8%;
+	color: #242424;
+	border: 1px solid #B7B7B7;
+}
+
+.button-send{
+	background: #A383C9;
+	width: 180px;
+	height: 60px;
+	color: #F8F8F8;
+	font-weight: 700;
+	margin: 2% 8%;
+	border: none;
+}
+
+footer {
+    text-align: center;
+    font-size: 16px; /* Adjust the font size as needed */
+    background-color: #333333; /* Coral pink color */
+    color: palevioletred;
+    padding: 10px;
+    position: relative; /* Added relative positioning */
+    z-index: 999;
+}
