@@ -2,6 +2,10 @@ body{
     background-image: url('https://static.vecteezy.com/system/resources/previews/003/641/130/original/colorful-pink-blurred-backgrounds-valentine-s-day-pink-background-abstract-gradient-light-pink-illustration-free-vector.jpg');
     font-family: 'popins', sans-serif;
 }
+
+header{
+    padding: 2rem 2rem 0rem;
+}
 .wrapper{
     max-width: 1000px;
     margin: 0 auto;
