@@ -109,10 +109,12 @@ h2{
 .timer {
     font-size: 18px;
     margin-top: 10px;
+    color: white;
 }
 
 #timer {
     font-weight: bold;
+    color: white;
 }
 
 .carousel-inner .carousel-item {
@@ -179,4 +181,48 @@ footer {
     padding: 10px;
     position: relative; /* Added relative positioning */
     z-index: 999;
+}
+
+.todo-list {
+    background: #ffffff;
+    color: #21201e;
+    text-align: center;
+    width: 240px;
+    height: 400px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+}
+
+.todo-list .input-container {
+    display: flex;
+    align-items: center;
+}
+
+.todo-list input[type="text"] {
+    width: 100%;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.todo-list #addTask {
+    width: 4rem; /* Adjust width to make it smaller */
+    margin-left: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: mediumpurple;
+    color: #ececec;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.todo-list #addTask:hover {
+    transform: scale(1.1);
 }

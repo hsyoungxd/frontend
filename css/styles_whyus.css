@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,500,600,700,800,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #4B0082;
+    min-height: 1500px;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(rgba(9, 0, 77, 0.2), rgba(128, 0, 128, 0.2));
+    z-index: 100;
+    /* mix-blend-mode: color; */
+}
+
+section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(9, 0, 77, 0.2), rgba(128, 0, 128, 0.2));
+    z-index: 100;
+    mix-blend-mode: color;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#text {
+    position: relative;
+    color: #fff;
+    font-size: 10em;
+    z-index: 1;
+}
+
+#road{
+    z-index: 2;
+}
+/* CSS for styling "WHY WE?" heading and the paragraph */
+.text-container2 {
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Centered horizontally */
+    transform: translate(-50%, -50%);
+    color: #fff; /* White color */
+    font-family: 'Poppins', sans-serif; /* Classy font */
+    text-align: center; /* Center text */
+}
+
+h1 {
+    font-size: 4em; /* Make the "WHY WE?" text big */
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 5px; /* Increase letter spacing for a spaced-out effect */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* White glowy effect */
+}
+
+p.reveal-text {
+    font-size: 2em; /* Larger font size */
+    line-height: 1.5; /* Adjust line height as needed */
+    margin-top: 20px; /* Add some top margin for spacing */
+    text-align: center; /* Center the paragraph text */
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s; /* Transition for color change */
+}
+
+p.reveal-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: #4B0082; /* Background color */
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(-100%);
+}
+
+p.reveal-text:hover::before {
+    transform: translateX(0);
+}
+
+/* Blue sky lighting glow effect on hover */
+p.reveal-text:hover {
+    color: #ffffff; /* Light blue color */
+    text-shadow: 0 0 10px plum, 0 0 20px plum, 0 0 30px plum; /* Text glow effect */
+}

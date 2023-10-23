@@ -32,6 +32,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="cart.html">Cart</a>
                         </li>  
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="whyus.html" style="font-weight: bold;">Why us?</a>
+                        </li>  
                     </ul>
                     
                 </div>
@@ -41,7 +45,17 @@
     <section class="creators">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
+                    <div class="card" style="width: 13rem; border-radius: 20px;">
+                        <div class="section" onclick="toggleSection(this)">
+                            <div class="section-header" style="margin: 20px; text-align: center;">About us</div>
+                            <div class="section-content" style="text-align: center;">
+                                <p>Some brief info about fiftyfifty</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
                     <div class="card" style="width: 13rem; border-radius: 20px;">
                         <img class="card-img-top rounded-circle mx-auto d-block" src="img/alikh.jpg" alt="Card image cap" style="max-width: 100px; margin-top: 20px;">
                         <div class="card-body" style="text-align: center;">
@@ -52,7 +66,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="card" style="width: 13rem; border-radius: 20px;">
                         <img class="card-img-top rounded-circle mx-auto d-block" src="img/daniya.jpg" alt="Card image cap" style="max-width: 100px; margin-top: 20px;">
                         <div class="card-body" style="text-align: center;">
@@ -63,7 +77,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="card" style="width: 13rem; border-radius: 20px;">
                         <img class="card-img-top rounded-circle mx-auto d-block" src="img/alua.jpg" alt="Card image cap" style="max-width: 100px; margin-top: 20px;">
                         <div class="card-body" style="text-align: center;">
@@ -76,7 +90,19 @@
                 </div>
             </div>
         </div>
+        <script>
+            function toggleSection(section) {
+              section.classList.toggle('active');
+              var content = section.querySelector('.section-content');
+              if (section.classList.contains('active')) {
+                content.style.display = 'block';
+              } else {
+                content.style.display = 'none';
+              }
+            }
+          </script>
     </section>
+    
     <section id="contact">
         <div class="container2" id="contact-us">
             <div class="map">
