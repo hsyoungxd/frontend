@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro&family=Source+Serif+Pro:wght@200&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/003/641/130/original/colorful-pink-blurred-backgrounds-valentine-s-day-pink-background-abstract-gradient-light-pink-illustration-free-vector.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: palevioletred;
+}
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between; /* Add space between button and header text */
+    background-color: rgba(0, 0, 0, 0.5); /* Add background color for visibility */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.header h1 {
+    text-align: center;
+    color: #fff; /* Set the text color to white */
+    font-size: 48px; /* Increase the font size */
+    margin: 0;
+    padding: 20px 0; /* Adjust top and bottom padding as needed */
+    font-family: 'Montserrat', sans-serif; /* Apply the 'Montserrat' font */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Add a glow effect with text-shadow */
+}
+.header .goback-button {
+    background: #AC3B61; /* Background color for the button */
+    color: #fff; /* Text color for the button */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px; /* Adjust padding as needed */
+    cursor: pointer;
+}
+
+.header .goback-button:hover {
+    background: #DA7B93; /* Change background color on hover */
+}
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    transform-style: preserve-3d;
+    /* The transform-style property specifies how nested elements are rendered in 3D space. */
+    /* Specifies that child elements will preserve its 3D position */
+}
+.container .box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    background: #AC3B61;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+}
+.container .box::before {
+    content: "K-POP";
+    position: absolute;
+    top: 52px;
+    left: 20px;
+    font-size: 3em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .box::after {
+    content: "Merchandise";
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .box:hover::before,
+.container .box:hover::after {
+    opacity: 0.05;
+}
+.container .box .name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform: translate3d(0, 0, 75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+.container .box:hover .name {
+    top: 40px;
+    opacity: 1;
+}
+.container .box .buy {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, 0, 75px);
+    color: #fff;
+    background: #333;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+.container .box:hover .buy {
+    bottom: 30px;
+    opacity: 1;
+}
+.container .box .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: #fff;
+    z-index: 10;
+    opacity: 1;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, -50%, 50px);
+}
+.container .box .product {
+    position: absolute;
+    top: 44%;
+    left: 56%;
+    max-width: 300px;
+    transition: 0.5s;
+    z-index: 11;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, -50%, 51px) rotate(6deg);
+    opacity: 1;
+}
+.container .box:hover .product {
+    transform: translate3d(-50%, -50%, 60px) rotate(15deg);
+}
+.container .box:nth-child(1) .circle,
+.container .box:nth-child(1) .buy {
+    background: #DA7B93;
+}
+.container .box:nth-child(2) .circle,
+.container .box:nth-child(2) .buy {
+    background: #DA7B93;
+}
+.container .box:nth-child(3) .circle,
+.container .box:nth-child(3) .buy {
+    background: #DA7B93;
+}

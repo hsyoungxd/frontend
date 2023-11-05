@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const taskInput = document.getElementById("task");
+document.addEventListener("DOMContentLoaded", function () {//event
+    const taskInput = document.getElementById("task");//selector
     const addTaskButton = document.getElementById("addTask");
     const taskList = document.getElementById("taskList");
     // Add task function
@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
             checkBox.style.width = "12px"; // Set the width
             checkBox.style.height = "12px"; // Set the height
             checkBox.style.borderRadius = "50%"; // Make it rounded
-            checkBox.style.appearance = "none"; // Remove default appearance (optional, for webkit-based browsers)
+            checkBox.style.appearance = "none";
             checkBox.style.cursor = "pointer"; // Change cursor on hover
-            checkBox.style.transition = "all 0.2s"; // Add transition for a smooth effect
+            checkBox.style.transition = "all 0.2s";//transition
             checkBox.addEventListener("change", function () {
                 if (checkBox.checked) {
                     checkBox.style.backgroundColor = "purple"; // Background color when checked
@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     checkBox.style.border = "2px solid #000"; // Border around the checkbox
                 }
             });
-            // Customize the appearance (border, background, checked state, etc.)
             checkBox.style.border = "2px solid #000"; // Border around the checkbox
             checkBox.style.backgroundColor = "#fff";
             const taskLabel = document.createElement("label");
@@ -44,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
             deleteButton.style.cursor = 'pointer';
             deleteButton.style.backgroundColor = 'mediumpurple';
             deleteButton.style.color = 'white';
-            deleteButton.addEventListener('mouseover', () => {
+            deleteButton.addEventListener('mouseover', () => {//mouseover
                 deleteButton.style.transform = 'scale(1.1)';
             });
             deleteButton.addEventListener('mouseout', () => {
@@ -62,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
             
             // Attach event listeners for checkbox and delete button
             checkBox.addEventListener("change", completeTask);
-            deleteButton.addEventListener("click", removeTask);
+            deleteButton.addEventListener("click", removeTask);//click
             }
         else
             alert("You must write smthng")

@@ -14,17 +14,6 @@ body {
     
 }
 
-/* header {
-    background-color: #333333;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 999;
-} */
-
 .navbar {
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0);
@@ -125,6 +114,7 @@ h2{
 .row{
     margin-bottom: 20px;
 }
+
 .product{
     overflow: hidden;
     background: #ffffff;
@@ -225,4 +215,24 @@ footer {
 
 .todo-list #addTask:hover {
     transform: scale(1.1);
+}
+
+.fancy-link {
+    text-align: center; /* Center the link horizontally */
+    margin: 20px 0; /* Adjust margin as needed */
+}
+
+.fancy-link a {
+    background: #AC3B61; /* Background color for the link */
+    color: #fff; /* Text color for the link */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px; /* Adjust padding as needed */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold; /* Apply bold font weight */
+    font-size: 18px; /* Set the font size */
+}
+
+.fancy-link a:hover {
+    background: #DA7B93; /* Change background color on hover */
 }

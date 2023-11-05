@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="img/felix.png" type="image/x-icon">
+  <title>FIFTY FIFTY | K-POP Staff SHOP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles_moreproducts.css" />
+  <title>More Products</title>
+</head>
+<body>
+<div class="header">
+  <button class="goback-button" onclick="goBack()">GO BACK</button>
+  <h1>CHOOSE YOUR MERCH</h1>
+</div>
+<div class="container">
+  <div class="box">
+    <h2 class="name">LIGHTSTICKS</h2>
+    <a href="#" class="buy">Buy Now</a>
+    <div class="circle"></div>
+    <img src="img/skzlight.png" class="product" alt="skz lightstick" />
+  </div>
+  <div class="box">
+    <h2 class="name">K-POP CARDS</h2>
+    <a href="#" class="buy">Buy Now</a>
+    <div class="circle"></div>
+    <img src="img/skzcards.png" class="product" alt="cards" />
+  </div>
+  <div class="box">
+    <h2 class="name">ALBUMS</h2>
+    <a href="#" class="buy">Buy Now</a>
+    <div class="circle"></div>
+    <img src="img/btsproof.png" class="product" alt="bts album" />
+  </div>
+</div>
+</body>
+<script src="js/moreproducts.js"></script>
+<script type="text/javascript">
+  VanillaTilt.init(document.querySelectorAll(".box"), {
+    max: 25,
+    speed: 200,
+    scale: 1.1,
+  });
+  function goBack() {
+    window.location.href = "products.html";
+  }
+</script>
+</html>
